@@ -9,7 +9,6 @@ from utility.XLUtils import getRowCount, readData
 @pytest.mark.usefixtures("setup")
 class TestLoginDDT:
     def test_login_ddt(self):
-
         base_url = ReadConfig.getApplicationURL()
         self.driver.get(base_url)
         current_dir = os.path.dirname(os.path.abspath(__file__))

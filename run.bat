@@ -1,0 +1,1 @@
+pytest  .\TestCases  --alluredir=Reports/AllureReports --html=Reports/HTMLReport/report.html -v -s

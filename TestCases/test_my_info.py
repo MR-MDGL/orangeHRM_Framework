@@ -38,9 +38,9 @@ class TestMyInfo:
         self.wait.until(EC.presence_of_element_located((By.XPATH, my_info.emp_id_xpath)))
 
 
-        my_info.set_first_name("drags")
-        my_info.set_middle_name("op")
-        my_info.set_last_name("test")
+        my_info.set_first_name("987654")
+        my_info.set_middle_name("987")
+        my_info.set_last_name("654")
         my_info.set_employee_id("09263")
         my_info.set_other_id("456789")
         my_info.set_driver_license("12345")
@@ -56,5 +56,5 @@ class TestMyInfo:
         my_info.click_save()
 
         # Wait until any saving process is complete (example: wait until the save button spinner disappears)
-        # self.wait.until(EC.invisibility_of_element_located((By.XPATH, "//button[@type='submit']//i")))
+        self.wait.until(EC.invisibility_of_element_located((By.XPATH, "//button[@type='submit']//i")))
         assert True

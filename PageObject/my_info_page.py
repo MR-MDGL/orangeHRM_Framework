@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -18,46 +19,40 @@ class MyInfoPage:
     marital_status_dropdown_xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"
     gender_male_xpath = "//label[normalize-space()='Male']//span[@class='oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input']"
     gender_female_xpath = "//label[normalize-space()='Female']//span[@class='oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input']"
-    save_button_xpath = "//div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']//button[@type='submit'][normalize-space()='Save']"
+    save_button_xpath = "//div[@class='orangehrm-custom-fields']//button[@type='submit'][normalize-space()='Save']"
 
     def click_my_info_menu(self):
         self.driver.find_element(By.XPATH, self.my_info_menu_xpath).click()
 
+    def clear_and_input_text(self, xpath, text):
+        el = self.driver.find_element(By.XPATH, xpath)
+        el.send_keys(Keys.CONTROL + "a")   # Select all text
+        el.send_keys(Keys.BACKSPACE)         # Delete selected text
+        el.send_keys(text)
+
     def set_first_name(self, fname):
-        el = self.driver.find_element(By.XPATH, self.first_name_xpath)
-        el.clear()
-        el.send_keys(fname)
+        self.clear_and_input_text(self.first_name_xpath, fname)
 
     def set_middle_name(self, mname):
-        el = self.driver.find_element(By.XPATH, self.middle_name_xpath)
-        el.clear()
-        el.send_keys(mname)
+        self.clear_and_input_text(self.middle_name_xpath, mname)
 
     def set_last_name(self, lname):
-        el = self.driver.find_element(By.XPATH, self.last_name_xpath)
-        el.clear()
-        el.send_keys(lname)
+        self.clear_and_input_text(self.last_name_xpath, lname)
 
     def set_employee_id(self, empid):
-        el = self.driver.find_element(By.XPATH, self.emp_id_xpath)
-        el.clear()
-        el.send_keys(empid)
+        self.clear_and_input_text(self.emp_id_xpath, empid)
 
     def set_other_id(self, otherid):
-        el = self.driver.find_element(By.XPATH, self.other_id_xpath)
-        el.clear()
-        el.send_keys(otherid)
+        self.clear_and_input_text(self.other_id_xpath, otherid)
 
     def set_driver_license(self, license_num):
-        el = self.driver.find_element(By.XPATH, self.driver_license_xpath)
-        el.clear()
-        el.send_keys(license_num)
+        self.clear_and_input_text(self.driver_license_xpath, license_num)
 
     def set_license_expiry(self, expiry_date):
+        # Remove readonly attribute if needed; then use key combo to clear & input text
         expiry_field = self.driver.find_element(By.XPATH, self.license_expiry_xpath)
-        # self.driver.execute_script("arguments[0].removeAttribute('readonly')", expiry_field)
-        expiry_field.clear()
-        expiry_field.send_keys(expiry_date)
+        self.driver.execute_script("arguments[0].removeAttribute('readonly')", expiry_field)
+        self.clear_and_input_text(self.license_expiry_xpath, expiry_date)
 
     def select_nationality(self):
         self.driver.find_element(By.XPATH, self.nationality_dropdown_xpath).click()

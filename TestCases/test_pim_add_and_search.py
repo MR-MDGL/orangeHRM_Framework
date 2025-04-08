@@ -25,9 +25,9 @@ class TestPim:
 
         # Step 3: Add Employee
         pim.click_add_button()
-        pim.enter_first_name("temporary employee creation")
-        pim.enter_middle_name("testt")
-        pim.enter_last_name("Test")
+        pim.enter_first_name("123")
+        pim.enter_middle_name("456")
+        pim.enter_last_name("789")
         time.sleep(1)
 
         pim.enter_employee_id("123")
@@ -35,13 +35,13 @@ class TestPim:
         pim.click_save()
         time.sleep(1)
 
-        # Step 4: Go back to PIM (search page)
+
         pim.click_pim_menu()
 
-        # Step 5: Search employee by ID
+
         pim.enter_search_employee_id("002")
         pim.click_search_button()
         time.sleep(1)
 
-        # Step 6: Verify employee appears in results
+
         assert "002" in self.driver.page_source, "Employee ID 002 not found in search results"

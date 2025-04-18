@@ -1,6 +1,7 @@
 import openpyxl
 from openpyxl.styles import PatternFill
 
+
 def getRowCount(file,sheetName):
     workbook = openpyxl.load_workbook(file)
     sheet = workbook[sheetName]

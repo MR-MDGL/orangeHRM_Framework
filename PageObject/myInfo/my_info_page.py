@@ -2,15 +2,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import time
 
 class MyInfoPage:
-    def __init__(self, driver):
+    def __init__(self, driver, wait):
         self.driver = driver
+        self.wait = wait
 
-    my_info_menu_xpath = "//span[normalize-space()='My Info']"
-    first_name_xpath = "//input[@placeholder='First Name']"
-    middle_name_xpath = "//input[@placeholder='Middle Name']"
-    last_name_xpath = "//input[@placeholder='Last Name']"
+    my_info_menu_xpath = "//span[text()='My Info']"
+    first_name_xpath = "//input[@name='firstName']"
+    middle_name_xpath = "//input[@name='middleName']"
+    last_name_xpath = "//input[@name='lastName']"
     emp_id_xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]"
     other_id_xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]"
     driver_license_xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[2]/input[1]"
@@ -19,10 +21,12 @@ class MyInfoPage:
     marital_status_dropdown_xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"
     gender_male_xpath = "//label[normalize-space()='Male']//span[@class='oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input']"
     gender_female_xpath = "//label[normalize-space()='Female']//span[@class='oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input']"
-    save_button_xpath = "//div[@class='orangehrm-custom-fields']//button[@type='submit'][normalize-space()='Save']"
+    save_button_xpath = "//button[@type='submit']"
 
-    def click_my_info_menu(self):
-        self.driver.find_element(By.XPATH, self.my_info_menu_xpath).click()
+    def navigate_to_my_info(self):
+        my_info_menu = self.wait.until(EC.element_to_be_clickable((By.XPATH, self.my_info_menu_xpath)))
+        my_info_menu.click()
+        time.sleep(2)
 
     def clear_and_input_text(self, xpath, text):
         el = self.driver.find_element(By.XPATH, xpath)
@@ -72,4 +76,14 @@ class MyInfoPage:
         self.driver.find_element(By.XPATH, self.gender_male_xpath).click()
 
     def click_save(self):
-        self.driver.find_element(By.XPATH, self.save_button_xpath).click()
+        save_button = self.wait.until(EC.element_to_be_clickable((By.XPATH, self.save_button_xpath)))
+        save_button.click()
+        time.sleep(2)
+
+    def update_personal_details(self, first_name, middle_name, last_name, employee_id):
+        self.navigate_to_my_info()
+        self.set_first_name(first_name)
+        self.set_middle_name(middle_name)
+        self.set_last_name(last_name)
+        self.set_employee_id(employee_id)
+        self.click_save()

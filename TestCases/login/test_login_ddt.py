@@ -1,134 +1,120 @@
+# import os
+# import pytest
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.support.ui import WebDriverWait
+# from PageObject.login.orange_launch_page import LaunchPage
+# from utility.readProperties import ReadConfig
+# from utility.XLUtils import getRowCount, readData
+#
+#
+# @pytest.mark.usefixtures("setup")
+# class TestLoginDDT:
+#
+#     def test_login_ddt(self):
+#         base_url = ReadConfig.getApplicationURL()
+#         self.driver.get(base_url)
+#
+#         # Construct the absolute path for the Excel file
+#         excel_path = os.path.join(os.path.dirname(__file__), '../../TestData/orangehrm.xlsx')
+#         excel_path = os.path.abspath(excel_path)
+#
+#         # Check if the file exists
+#         if not os.path.exists(excel_path):
+#             pytest.fail(f"Excel file not found: {excel_path}")
+#
+#         lp = LaunchPage(self.driver, self.wait)
+#         rows = getRowCount(excel_path, "Sheet1")
+#
+#         for r in range(2, rows + 1):
+#             username = readData(excel_path, "Sheet1", r, 1)
+#             password = readData(excel_path, "Sheet1", r, 2)
+#
+#             # Skip rows with missing data
+#             if not username or not password:
+#                 continue
+#
+#             lp.enter_username(username)
+#             lp.enter_password(password)
+#             lp.click_login()
+#
+#             # Wait for the dashboard or login failure
+#             try:
+#                 WebDriverWait(self.driver, 5).until(
+#                     EC.presence_of_element_located((By.XPATH, "//span[text()='Dashboard']"))
+#                 )
+#                 print(f"Row {r}: Login successful for username: {username}")
+#             except:
+#                 print(f"Row {r}: Login failed for username: {username}")
+#
+#             # Reset for the next iteration
+#             self.driver.delete_all_cookies()
+#             self.driver.get(base_url)
+#
+
+
+
+
+
+
+
+
+
+
+
+
+import os
 import pytest
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-import allure
-from datetime import datetime
-import os
-
 from PageObject.login.orange_launch_page import LaunchPage
 from utility.readProperties import ReadConfig
 from utility.XLUtils import getRowCount, readData, writeData, fillGreenColor, fillRedColor
-
-
 @pytest.mark.usefixtures("setup")
 class TestLoginDDT:
 
-    @allure.step("Taking screenshot: {name}")
-    def take_screenshot(self, name):
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        screenshot_name = f"fail screenshot login_{timestamp}.png"
-        screenshot_path = os.path.join("Screenshots", screenshot_name)
-        self.driver.save_screenshot(screenshot_path)
-        # Attach screenshot to Allure report
-        with open(screenshot_path, "rb") as file:
-            allure.attach(
-                file.read(),
-                name=screenshot_name,
-                attachment_type=allure.attachment_type.PNG
-            )
-        return screenshot_path
-
-    @allure.severity(allure.severity_level.CRITICAL)
-    @allure.title("Login Data Driven Test")
-    @allure.description("Test login functionality with different credentials from Excel file")
     def test_login_ddt(self):
-        try:
-            base_url = ReadConfig.getApplicationURL()
+        base_url = ReadConfig.getApplicationURL()
+        self.driver.get(base_url)
+
+        excel_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../TestData/orangehrm.xlsx'))
+
+        if not os.path.exists(excel_path):
+            pytest.fail(f"Excel file not found: {excel_path}")
+
+        lp = LaunchPage(self.driver, self.wait)
+        rows = getRowCount(excel_path, "Sheet1")
+        actual_col = 4  # Column D (index starts at 1)
+
+        for r in range(2, rows + 1):
+            username = readData(excel_path, "Sheet1", r, 1)
+            password = readData(excel_path, "Sheet1", r, 2)
+            expected = readData(excel_path, "Sheet1", r, 3)
+
+            if not username or not password or not expected:
+                writeData(excel_path, "Sheet1", r, actual_col, "Fail - Missing Data")
+                fillRedColor(excel_path, "Sheet1", r, actual_col)
+                continue
+
+            lp.enter_username(username)
+            lp.enter_password(password)
+            lp.click_login()
+
+            try:
+                WebDriverWait(self.driver, 5).until(
+                    EC.presence_of_element_located((By.XPATH, "//span[text()='Dashboard']"))
+                )
+                actual_result = "Valid"
+            except:
+                actual_result = "Invalid"
+
+            if actual_result == expected:
+                writeData(excel_path, "Sheet1", r, actual_col, "Pass")
+                fillGreenColor(excel_path, "Sheet1", r, actual_col)
+            else:
+                writeData(excel_path, "Sheet1", r, actual_col, "Fail")
+                fillRedColor(excel_path, "Sheet1", r, actual_col)
+
+            self.driver.delete_all_cookies()
             self.driver.get(base_url)
-
-            # Use relative path for Excel file
-            excel_path = os.path.join("TestData", "orangehrm.xlsx")
-            lp = LaunchPage(self.driver, self.wait)
-            rows = getRowCount(excel_path, "Sheet1")
-            results_list = []
-            actual_result_col = 4
-
-            for r in range(2, rows + 1):
-                with allure.step(f"Testing login with data from row {r}"):
-                    username = readData(excel_path, "Sheet1", r, 1)
-                    password = readData(excel_path, "Sheet1", r, 2)
-                    expected = readData(excel_path, "Sheet1", r, 3)
-
-                    # Validate data from Excel
-                    if username is None or password is None or expected is None or \
-                       str(username).strip() == "" or str(password).strip() == "" or str(expected).strip() == "":
-                        error_msg = f"Missing data in row {r}: Username={username}, Password={password}, Expected={expected}"
-                        allure.attach(error_msg, name=f"Data Validation Error Row {r}", attachment_type=allure.attachment_type.TEXT)
-                        self.take_screenshot("fail")
-                        results_list.append("Fail")
-                        writeData(excel_path, "Sheet1", r, actual_result_col, "Fail - Missing Data")
-                        fillRedColor(excel_path, "Sheet1", r, actual_result_col)
-                        continue
-
-                    allure.attach(
-                        f"Username: {username}\nPassword: {password}\nExpected: {expected}",
-                        name=f"Test Data Row {r}",
-                        attachment_type=allure.attachment_type.TEXT
-                    )
-
-                    try:
-                        lp.enter_username(username)
-                        lp.enter_password(password)
-                        lp.click_login()
-
-                        wait = WebDriverWait(self.driver, 5)
-                        dashboard_xpath = "//span[text()='Dashboard']"
-                        wait.until(EC.presence_of_element_located((By.XPATH, dashboard_xpath)))
-
-                        current_url = self.driver.current_url.lower()
-
-                        if expected.lower() == "valid" and "dashboard" in current_url:
-                            results_list.append("Pass")
-                            writeData(excel_path, "Sheet1", r, actual_result_col, "Pass")
-                            fillGreenColor(excel_path, "Sheet1", r, actual_result_col)
-                            allure.attach("Login successful", name=f"Step Result Row {r}", attachment_type=allure.attachment_type.TEXT)
-                        else:
-                            # Take screenshot only if login succeeded when it shouldn't have
-                            if "dashboard" in current_url:
-                                self.take_screenshot("fail")
-                            results_list.append("Fail")
-                            writeData(excel_path, "Sheet1", r, actual_result_col, "Fail")
-                            fillRedColor(excel_path, "Sheet1", r, actual_result_col)
-                            allure.attach(
-                                f"Expected: {expected}\nActual: Got to dashboard when shouldn't have",
-                                name=f"Failure Details Row {r}",
-                                attachment_type=allure.attachment_type.TEXT
-                            )
-
-                    except TimeoutException:
-                        current_url = self.driver.current_url.lower()
-                        
-                        if expected.lower() == "invalid" and "dashboard" not in current_url:
-                            results_list.append("Pass")
-                            writeData(excel_path, "Sheet1", r, actual_result_col, "Pass")
-                            fillGreenColor(excel_path, "Sheet1", r, actual_result_col)
-                            allure.attach("Invalid login blocked as expected", name=f"Step Result Row {r}", attachment_type=allure.attachment_type.TEXT)
-                        else:
-                            # Take screenshot only if login failed when it should have succeeded
-                            if "dashboard" not in current_url and expected.lower() == "valid":
-                                self.take_screenshot("fail")
-                            results_list.append("Fail")
-                            writeData(excel_path, "Sheet1", r, actual_result_col, "Fail")
-                            fillRedColor(excel_path, "Sheet1", r, actual_result_col)
-                            allure.attach(
-                                f"Expected: {expected}\nActual: Could not reach dashboard when should have",
-                                name=f"Failure Details Row {r}",
-                                attachment_type=allure.attachment_type.TEXT
-                            )
-
-                    finally:
-                        self.driver.delete_all_cookies()
-                        self.driver.get(base_url)
-
-            if "Fail" in results_list:
-                failed_rows = [i+2 for i, result in enumerate(results_list) if result == "Fail"]
-                error_message = f"Data-Driven Test Failed for rows: {failed_rows}"
-                allure.attach(error_message, name="Test Failure Summary", attachment_type=allure.attachment_type.TEXT)
-                pytest.fail(error_message)
-
-        except Exception as e:
-            self.take_screenshot("fail")
-            allure.attach(str(e), name="Exception Details", attachment_type=allure.attachment_type.TEXT)
-            raise

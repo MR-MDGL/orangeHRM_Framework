@@ -24,9 +24,9 @@ class TestMyInfo:
         self.wait.until(EC.presence_of_element_located((By.XPATH, "//span[text()='My Info']")))
     
     def test_update_personal_details(self):
-        first_name = "John"
+        first_name = "khalid"
         middle_name = "M"
-        last_name = "Doe"
+        last_name = "Pasha"
         employee_id = "1234"
         
         self.mip.update_personal_details(first_name, middle_name, last_name, employee_id)

@@ -53,7 +53,6 @@ class MyInfoPage:
         self.clear_and_input_text(self.driver_license_xpath, license_num)
 
     def set_license_expiry(self, expiry_date):
-        # Remove readonly attribute if needed; then use key combo to clear & input text
         expiry_field = self.driver.find_element(By.XPATH, self.license_expiry_xpath)
         self.driver.execute_script("arguments[0].removeAttribute('readonly')", expiry_field)
         self.clear_and_input_text(self.license_expiry_xpath, expiry_date)

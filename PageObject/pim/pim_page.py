@@ -69,7 +69,6 @@ class PimPage:
         self.enter_middle_name(middle_name)
         self.enter_last_name(last_name)
         self.enter_employee_id(emp_id)
-        # self.upload_image()
         self.click_save()
 
     def search_employee(self, name):

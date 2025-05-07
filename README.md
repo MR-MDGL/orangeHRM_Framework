@@ -73,39 +73,6 @@ Hi! This is my automation testing project using Python, Selenium, and MySQL. I m
      ```
    - Screenshots for failed logins are saved in the project folder.
 
-## Logging and Test Tracking
-
-I set up logging so I can always see which test methods I executed, when they started, and when they finished. This is really helpful for debugging and tracking my test runs.
-
-- **How I set it up:**
-  - I configured pytest to write logs to `logs/pytest.log`.
-  - The log entries include the date, time, and which test method started or ended.
-  - I set this up in `pytest.ini` with:
-    ```
-    addopts = --log-cli-level=INFO --log-file=logs/pytest.log --log-file-level=INFO
-    log_format = %(asctime)s %(levelname)s %(message)s
-    log_date_format = %Y-%m-%d %H:%M:%S
-    ```
-  - I also added special hooks in `TestCases/conftest.py`:
-    ```python
-    def pytest_runtest_logstart(nodeid, location):
-        logging.info(f"START: {nodeid}")
-
-    def pytest_runtest_logfinish(nodeid, location):
-        logging.info(f"END: {nodeid}")
-    ```
-- **What happens when I run tests:**
-  - Whenever I run any test file, pytest writes log entries to `logs/pytest.log`.
-  - For example:
-    ```
-    2025-05-06 00:49:17 INFO START: TestCases/buzz/test_buzz.py::TestBuzz::test_create_text_post
-    2025-05-06 00:50:02 INFO END: TestCases/buzz/test_buzz.py::TestBuzz::test_create_text_post
-    ```
-- **Why this is useful for me:**
-  - I can always check which tests I ran, how long they took, and in what order.
-  - If a test fails or hangs, I can see where it stopped in the log.
-  - It works for every test file in my project, automatically.
-
 ## What I Learned
 
 - I learned how to use Selenium for web automation.

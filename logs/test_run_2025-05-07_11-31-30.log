@@ -1,0 +1,6 @@
+2025-05-07 11:31:30 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:31:30 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:31:30 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:31:40 - INFO - [test_login_ddt.py:19] - ===== Starting test_login_ddt =====
+2025-05-07 11:31:41 - ERROR - [test_login_ddt.py:90] - Error in test_login_ddt: 'WebDriver' object has no attribute 'wait'
+2025-05-07 11:31:41 - INFO - [test_login_ddt.py:93] - ===== Finished test_login_ddt =====

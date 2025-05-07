@@ -1,0 +1,16 @@
+2025-05-07 11:00:56 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:00:56 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:00:56 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:01:12 - INFO - [test_login_with_logging.py:13] - ===== Starting test_login_with_valid_credentials =====
+2025-05-07 11:01:12 - INFO - [test_login_with_logging.py:18] - Navigating to base URL: https://opensource-demo.orangehrmlive.com/
+2025-05-07 11:01:13 - INFO - [test_login_with_logging.py:22] - Initializing login page object
+2025-05-07 11:01:13 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:01:13 - INFO - [test_login_with_logging.py:26] - Entering username and password
+2025-05-07 11:01:13 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:01:16 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:01:16 - INFO - [test_login_with_logging.py:31] - Clicking login button
+2025-05-07 11:01:16 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:01:17 - INFO - [test_login_with_logging.py:35] - Verifying successful login
+2025-05-07 11:01:19 - INFO - [test_login_with_logging.py:38] - Validation passed: Login successful
+2025-05-07 11:01:19 - INFO - [test_login_with_logging.py:49] - ===== Finished test_login_with_valid_credentials =====
+

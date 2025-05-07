@@ -1,0 +1,8 @@
+2025-05-07 12:04:35 - INFO - [logger.py:43] - ==================================================
+2025-05-07 12:04:35 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 12:04:35 - INFO - [logger.py:45] - ==================================================
+2025-05-07 12:04:46 - INFO - [test_login_sql.py:15] - ===== Starting test_login_db =====
+2025-05-07 12:04:46 - INFO - [test_login_sql.py:20] - Connecting to MySQL database
+2025-05-07 12:04:46 - ERROR - [test_login_sql.py:84] - Error in test_login_db: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-05-07 12:04:46 - INFO - [test_login_sql.py:91] - ===== Finished test_login_db =====
+

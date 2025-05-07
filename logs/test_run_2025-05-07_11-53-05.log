@@ -1,0 +1,49 @@
+2025-05-07 11:53:05 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:53:05 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:53:05 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:53:21 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:53:21 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:53:23 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:53:23 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:53:28 - INFO - [orange_launch_page.py:18] - Entering username: admin
+2025-05-07 11:53:28 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:53:28 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:53:35 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:53:36 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:53:36 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:53:42 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:53:43 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:53:43 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:53:50 - INFO - [orange_launch_page.py:18] - Entering username: <script>
+2025-05-07 11:53:51 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:53:51 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:53:57 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:53:58 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:53:58 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:01 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:54:01 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:02 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:08 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:54:09 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:09 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:15 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:54:16 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:16 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:23 - INFO - [orange_launch_page.py:18] - Entering username:  
+2025-05-07 11:54:25 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:25 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:32 - INFO - [orange_launch_page.py:18] - Entering username: admin@example.com
+2025-05-07 11:54:32 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:32 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:39 - INFO - [orange_launch_page.py:18] - Entering username: ADMIN
+2025-05-07 11:54:39 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:40 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:46 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:54:47 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:47 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:54:54 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:54:55 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:54:55 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:55:01 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:55:01 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:55:02 - INFO - [orange_launch_page.py:32] - Clicking login button

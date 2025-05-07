@@ -1,0 +1,12 @@
+2025-05-07 11:07:38 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:07:38 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:07:38 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:07:52 - INFO - [test_login.py:10] - ===== Starting test_login =====
+2025-05-07 11:07:52 - INFO - [test_login.py:13] - Navigating to base URL: https://opensource-demo.orangehrmlive.com/
+2025-05-07 11:07:53 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:07:53 - INFO - [test_login.py:17] - Entering login credentials
+2025-05-07 11:07:53 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:07:56 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:07:57 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:07:57 - INFO - [test_login.py:22] - ===== Finished test_login =====
+

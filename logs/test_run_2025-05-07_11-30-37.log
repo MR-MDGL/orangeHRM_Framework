@@ -1,0 +1,42 @@
+2025-05-07 11:30:37 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:30:37 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:30:37 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:30:46 - INFO - [test_login_ddt.py:14] - ===== Starting test_login_ddt =====
+2025-05-07 11:30:47 - INFO - [test_login_ddt.py:20] - Using Excel data file: E:\BEBO-Tech\My framework\TestData\orangehrm.xlsx
+2025-05-07 11:30:47 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:30:47 - INFO - [test_login_ddt.py:28] - Found 19 test cases in Excel file
+2025-05-07 11:30:47 - INFO - [test_login_ddt.py:38] - Testing credentials - Username: Admin, Expected: Valid
+2025-05-07 11:30:48 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:30:48 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:30:49 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:30:50 - INFO - [test_login_ddt.py:52] - Login successful - Dashboard found
+2025-05-07 11:30:50 - WARNING - [test_login_ddt.py:61] - Login succeeded but was expected to fail
+2025-05-07 11:30:51 - INFO - [test_login_ddt.py:75] - Login failed - Dashboard not found
+2025-05-07 11:30:51 - WARNING - [test_login_ddt.py:82] - Login failed but was expected to succeed
+2025-05-07 11:30:52 - INFO - [test_login_ddt.py:38] - Testing credentials - Username: Admin, Expected: Invalid
+2025-05-07 11:31:03 - ERROR - [test_login_ddt.py:94] - Error in test_login_ddt: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF76D92EFA5+77893]
+	GetHandleVerifier [0x00007FF76D92F000+77984]
+	(No symbol) [0x00007FF76D6F91BA]
+	(No symbol) [0x00007FF76D74F16D]
+	(No symbol) [0x00007FF76D74F41C]
+	(No symbol) [0x00007FF76D7A2237]
+	(No symbol) [0x00007FF76D77716F]
+	(No symbol) [0x00007FF76D79F07F]
+	(No symbol) [0x00007FF76D776F03]
+	(No symbol) [0x00007FF76D740328]
+	(No symbol) [0x00007FF76D741093]
+	GetHandleVerifier [0x00007FF76DBE7B6D+2931725]
+	GetHandleVerifier [0x00007FF76DBE2132+2908626]
+	GetHandleVerifier [0x00007FF76DC000F3+3031443]
+	GetHandleVerifier [0x00007FF76D9491EA+184970]
+	GetHandleVerifier [0x00007FF76D95086F+215311]
+	GetHandleVerifier [0x00007FF76D936EC4+110436]
+	GetHandleVerifier [0x00007FF76D937072+110866]
+	GetHandleVerifier [0x00007FF76D91D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:31:03 - INFO - [test_login_ddt.py:98] - ===== Finished test_login_ddt =====
+

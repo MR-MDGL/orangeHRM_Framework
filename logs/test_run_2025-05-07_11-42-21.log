@@ -1,0 +1,273 @@
+2025-05-07 11:42:21 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:42:21 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:42:21 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:42:31 - INFO - [test_login_ddt.py:116] - ===== Starting test_login_ddt =====
+2025-05-07 11:42:32 - INFO - [test_login_ddt.py:123] - Found 19 test cases in Excel file
+2025-05-07 11:42:32 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Valid
+2025-05-07 11:42:35 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:42:36 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:42:36 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:42:36 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:42:39 - INFO - [test_login_ddt.py:149] - Login successful – main menu found
+2025-05-07 11:42:39 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Invalid
+2025-05-07 11:42:42 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:42:52 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:42:52 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: None, Expected: Invalid
+2025-05-07 11:42:55 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:43:06 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:43:06 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: None, Expected: Invalid
+2025-05-07 11:43:09 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:43:19 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:43:19 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: admin, Expected: Invalid
+2025-05-07 11:43:22 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:43:32 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:43:32 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Invalid
+2025-05-07 11:43:35 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:43:46 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:43:46 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Invalid
+2025-05-07 11:43:49 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:43:59 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:43:59 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: <script>, Expected: Invalid
+2025-05-07 11:44:02 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:44:12 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:44:12 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Valid
+2025-05-07 11:44:15 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:44:26 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:44:26 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Invalid
+2025-05-07 11:44:29 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:44:39 - ERROR - [test_login_ddt.py:163] - Timeout waiting for login form: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE96F16D]
+	(No symbol) [0x00007FF7EE96F41C]
+	(No symbol) [0x00007FF7EE9C2237]
+	(No symbol) [0x00007FF7EE99716F]
+	(No symbol) [0x00007FF7EE9BF07F]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:44:39 - INFO - [test_login_ddt.py:131] - Testing credentials - Username: Admin, Expected: Invalid
+2025-05-07 11:44:42 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:44:49 - ERROR - [test_login_ddt.py:175] - Error in test_login_ddt: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EEB4EFA5+77893]
+	GetHandleVerifier [0x00007FF7EEB4F000+77984]
+	(No symbol) [0x00007FF7EE9191BA]
+	(No symbol) [0x00007FF7EE904F15]
+	(No symbol) [0x00007FF7EE929F04]
+	(No symbol) [0x00007FF7EE99EACF]
+	(No symbol) [0x00007FF7EE9BE972]
+	(No symbol) [0x00007FF7EE996F03]
+	(No symbol) [0x00007FF7EE960328]
+	(No symbol) [0x00007FF7EE961093]
+	GetHandleVerifier [0x00007FF7EEE07B6D+2931725]
+	GetHandleVerifier [0x00007FF7EEE02132+2908626]
+	GetHandleVerifier [0x00007FF7EEE200F3+3031443]
+	GetHandleVerifier [0x00007FF7EEB691EA+184970]
+	GetHandleVerifier [0x00007FF7EEB7086F+215311]
+	GetHandleVerifier [0x00007FF7EEB56EC4+110436]
+	GetHandleVerifier [0x00007FF7EEB57072+110866]
+	GetHandleVerifier [0x00007FF7EEB3D479+5401]
+	BaseThreadInitThunk [0x00007FFA8F5EE8D7+23]
+	RtlUserThreadStart [0x00007FFA9093C5DC+44]
+
+2025-05-07 11:44:49 - INFO - [test_login_ddt.py:179] - ===== Finished test_login_ddt =====

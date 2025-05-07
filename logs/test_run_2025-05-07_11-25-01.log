@@ -1,0 +1,18 @@
+2025-05-07 11:25:01 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:25:01 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:25:01 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:25:17 - INFO - [test_login_ddt.py:14] - ===== Starting test_login_ddt =====
+2025-05-07 11:25:19 - INFO - [test_login_ddt.py:20] - Using Excel data file: E:\BEBO-Tech\My framework\TestData\orangehrm.xlsx
+2025-05-07 11:25:19 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:25:19 - INFO - [test_login_ddt.py:28] - Found 19 test cases in Excel file
+2025-05-07 11:25:19 - INFO - [test_login_ddt.py:38] - Testing credentials - Username: Admin, Expected: Valid
+2025-05-07 11:25:19 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 11:25:21 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 11:25:21 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 11:25:23 - INFO - [test_login_ddt.py:47] - Login successful - Dashboard found
+2025-05-07 11:25:23 - WARNING - [test_login_ddt.py:53] - Login succeeded but was expected to fail
+2025-05-07 11:25:23 - INFO - [test_login_ddt.py:61] - Login failed - Dashboard not found
+2025-05-07 11:25:23 - WARNING - [test_login_ddt.py:67] - Login failed but was expected to succeed
+2025-05-07 11:25:23 - ERROR - [test_login_ddt.py:76] - Error in test_login_ddt: [Errno 13] Permission denied: 'E:\\BEBO-Tech\\My framework\\TestData\\orangehrm.xlsx'
+2025-05-07 11:25:23 - INFO - [test_login_ddt.py:80] - ===== Finished test_login_ddt =====
+

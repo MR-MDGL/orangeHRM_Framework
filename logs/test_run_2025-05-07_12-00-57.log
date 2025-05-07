@@ -1,0 +1,76 @@
+2025-05-07 12:00:57 - INFO - [logger.py:43] - ==================================================
+2025-05-07 12:00:57 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 12:00:57 - INFO - [logger.py:45] - ==================================================
+2025-05-07 12:01:08 - INFO - [test_login.py:10] - ===== Starting test_login =====
+2025-05-07 12:01:08 - INFO - [test_login.py:13] - Navigating to base URL: https://opensource-demo.orangehrmlive.com/
+2025-05-07 12:01:09 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 12:01:09 - INFO - [test_login.py:17] - Entering login credentials
+2025-05-07 12:01:09 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:01:12 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:01:12 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:01:12 - INFO - [test_login.py:22] - ===== Finished test_login =====
+
+2025-05-07 12:01:34 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 12:01:34 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:01:36 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:01:36 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:01:40 - INFO - [orange_launch_page.py:18] - Entering username: admin
+2025-05-07 12:01:41 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:01:41 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:01:47 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:01:48 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:01:48 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:01:54 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:01:55 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:01:55 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:01 - INFO - [orange_launch_page.py:18] - Entering username: <script>
+2025-05-07 12:02:02 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:02 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:09 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:02:09 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:09 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:13 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:02:13 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:13 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:19 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:02:20 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:20 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:26 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:02:27 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:27 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:34 - INFO - [orange_launch_page.py:18] - Entering username:  
+2025-05-07 12:02:34 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:34 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:41 - INFO - [orange_launch_page.py:18] - Entering username: admin@example.com
+2025-05-07 12:02:41 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:42 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:47 - INFO - [orange_launch_page.py:18] - Entering username: ADMIN
+2025-05-07 12:02:48 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:48 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:02:55 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:02:55 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:02:55 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:03:02 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:03:03 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:03:03 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:03:09 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:03:09 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:03:09 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:03:26 - INFO - [test_login_sql.py:15] - ===== Starting test_login_db =====
+2025-05-07 12:03:26 - INFO - [test_login_sql.py:20] - Connecting to MySQL database
+2025-05-07 12:03:26 - ERROR - [test_login_sql.py:84] - Error in test_login_db: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-05-07 12:03:26 - INFO - [test_login_sql.py:91] - ===== Finished test_login_db =====
+
+2025-05-07 12:03:42 - INFO - [test_login_with_logging.py:13] - ===== Starting test_login_with_valid_credentials =====
+2025-05-07 12:03:42 - INFO - [test_login_with_logging.py:18] - Navigating to base URL: https://opensource-demo.orangehrmlive.com/
+2025-05-07 12:03:42 - INFO - [test_login_with_logging.py:22] - Initializing login page object
+2025-05-07 12:03:42 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 12:03:42 - INFO - [test_login_with_logging.py:26] - Entering username and password
+2025-05-07 12:03:42 - INFO - [orange_launch_page.py:18] - Entering username: Admin
+2025-05-07 12:03:44 - INFO - [orange_launch_page.py:25] - Entering password
+2025-05-07 12:03:44 - INFO - [test_login_with_logging.py:31] - Clicking login button
+2025-05-07 12:03:44 - INFO - [orange_launch_page.py:32] - Clicking login button
+2025-05-07 12:03:44 - INFO - [test_login_with_logging.py:35] - Verifying successful login
+2025-05-07 12:03:46 - INFO - [test_login_with_logging.py:38] - Validation passed: Login successful
+2025-05-07 12:03:46 - INFO - [test_login_with_logging.py:49] - ===== Finished test_login_with_valid_credentials =====
+

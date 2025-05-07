@@ -1,0 +1,8 @@
+2025-05-07 11:28:01 - INFO - [logger.py:43] - ==================================================
+2025-05-07 11:28:01 - INFO - [logger.py:44] - Starting new test run
+2025-05-07 11:28:01 - INFO - [logger.py:45] - ==================================================
+2025-05-07 11:28:13 - INFO - [test_login_ddt.py:14] - ===== Starting test_login_ddt =====
+2025-05-07 11:28:14 - INFO - [test_login_ddt.py:20] - Using Excel data file: E:\BEBO-Tech\My framework\TestData\orangehrm.xlsx
+2025-05-07 11:28:14 - INFO - [orange_launch_page.py:14] - LaunchPage object initialized
+2025-05-07 11:28:14 - INFO - [test_login_ddt.py:28] - Found 19 test cases in Excel file
+2025-05-07 11:28:14 - INFO - [test_login_ddt.py:38] - Testing credentials - Username: Admin, Expected: Valid
